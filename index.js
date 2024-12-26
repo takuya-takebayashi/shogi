@@ -27,10 +27,14 @@ const kingConf = {
     let result = [];
     // 左端にいる場合
     if (0 === second) {
-      // 正面
+      // 9一～1一の行にいない場合
       if (first !== 0) {
-        if (isEmpty(boardManagement[first - 1][0])) {
+        // 正面に進めるかを確認する
+        if (isEmpty(boardManagement[first - 1][0]) || (boardManagement[first - 1][0] !== null && boardManagement[first - 1][0].owner !== boardManagement[first][0].owner)) {
           result.push(2);
+        }
+        if (){
+
         }
       }
     }
