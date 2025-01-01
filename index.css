@@ -4,3 +4,26 @@
 #main {
   background-color: red;
 }
+
+div #board {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+body #main #board {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  height: 300px;
+  /* margin: 0px; */
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.1px solid black;
+}
+.cell{
+  margin: 0px 0px;
+  width: calc(100% / 9);
+  text-align: center;
+}
